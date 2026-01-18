@@ -2,24 +2,24 @@ using System;
 
 public class Entry
 {
-    public string Date;
-    public string Prompt;
-    public string Response;
-    public string Category;
+    public string _date;
+    public string _prompt;
+    public string _response;
+    public string _category;
 
     public Entry(string date, string prompt, string response, string category)
     {
-        Date = date;
-        Prompt = prompt;
-        Response = response;
-        Category = category;
+        _date = date;
+        _prompt = prompt;
+        _response = response;
+        _category = category;
     }
 
     public void Display()
     {
-        Console.WriteLine($"Date: {Date}");
-        Console.WriteLine($"Category: {Category}");
-        Console.WriteLine($"Prompt: {Prompt}");
-        Console.WriteLine($"Response: {Response}");
+        Console.WriteLine($"Date: {_date}");
+        Console.WriteLine($"Category: {_category}");
+        Console.WriteLine($"Prompt: {_prompt}");
+        Console.WriteLine($"Response: {_response}");
     }
 }

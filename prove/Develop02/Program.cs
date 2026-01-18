@@ -76,6 +76,7 @@ class Program
         Console.WriteLine("Entry added");
     }
 
+// ChooseCategory class is my own design on add a category to each prompt so you can see what category you listed it as. When you save and load the file, it will show the category when you display the journal entries.
     static string ChooseCategory()
     {
         Console.WriteLine("\nChoose a category: ");
