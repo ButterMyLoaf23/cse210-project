@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 
-
 class Scripture
 {
     private Reference _reference;
