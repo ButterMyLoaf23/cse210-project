@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 
+// For the stretch challenge, I created a library for scriptures. I have three scriptures that the program selects randomly.
+
 class Program
 {
     static void Main(string[] args)
