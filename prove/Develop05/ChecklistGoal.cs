@@ -11,6 +11,13 @@ public class ChecklistGoal : Goal
         _currentCount = 0;
     }
 
+    public ChecklistGoal(string name, string description, int points, int targetCount, int bonus, int currentCount) : base(name, description, points)
+    {
+        _targetCount = targetCount;
+        _bonus = bonus;
+        _currentCount = currentCount;
+    }
+
     public override int RecordEvent()
     {
         UpdateStreak();

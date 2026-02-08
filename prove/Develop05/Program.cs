@@ -160,7 +160,7 @@ class Program
 
             if (parts[0] == "SimpleGoal")
             {
-                goals.Add(new SimpleGoal(parts[1], parts[2], int.Parse(parts[3])));
+                goals.Add(new SimpleGoal(parts[1], parts[2], int.Parse(parts[3]), bool.Parse(parts[4])));
             }
             else if (parts[0] == "EternalGoal")
             {
@@ -168,7 +168,7 @@ class Program
             }
             else if (parts[0] == "ChecklistGoal")
             {
-                goals.Add(new ChecklistGoal(parts[1], parts[2], int.Parse(parts[3]), int.Parse(parts[4]), int.Parse(parts[5])));
+                goals.Add(new ChecklistGoal(parts[1], parts[2], int.Parse(parts[3]), int.Parse(parts[4]), int.Parse(parts[5]), int.Parse(parts[6])));
             }
         }
     }
