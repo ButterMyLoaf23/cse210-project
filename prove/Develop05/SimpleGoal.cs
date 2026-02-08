@@ -19,7 +19,8 @@ public class SimpleGoal : Goal
 
     public override string GetStatus()
     {
-        return _isComplete ? "[X]" : "[ ]";
+        string box = _isComplete ? "X" : " ";
+        return $"[{box}] {_name}"; 
     }
 
     public override string GetStringRepresentation()

@@ -11,7 +11,7 @@ public class EternalGoal : Goal
 
     public override string GetStatus()
     {
-        return "[ ]";
+        return "[ ] {_name}";
     }
 
     public override string GetStringRepresentation()

@@ -25,7 +25,8 @@ public class ChecklistGoal : Goal
 
     public override string GetStatus()
     {
-        return $"[{(_currentCount >= _targetCount ? "X" : " ")}] Completed {_currentCount}/{_targetCount}";
+        string box = _currentCount >= _targetCount ? "X" : " ";
+        return $"[{box}] {_name} (completed {_currentCount}/{_targetCount})";
     }
 
     public override string GetStringRepresentation()
