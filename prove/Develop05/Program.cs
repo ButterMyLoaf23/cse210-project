@@ -11,6 +11,8 @@ class Program
 
         while (true)
         {
+            Console.Clear();
+
             Console.WriteLine();
             Console.WriteLine($"You have {score} points.");
             Console.WriteLine();
@@ -107,6 +109,9 @@ class Program
         {
             Console.WriteLine($"{i + 1}. {goals[i].GetStatus()}");
         }
+
+        Console.WriteLine("Press enter to continue");
+        Console.ReadLine();
     }
 
     static void RecordGoals(List<Goal> goals, ref int score)
