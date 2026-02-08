@@ -13,6 +13,7 @@ public class ChecklistGoal : Goal
 
     public override int RecordEvent()
     {
+        UpdateStreak();
         _currentCount++;
 
         if (_currentCount == _targetCount)
@@ -26,7 +27,7 @@ public class ChecklistGoal : Goal
     public override string GetStatus()
     {
         string box = _currentCount >= _targetCount ? "X" : " ";
-        return $"[{box}] {_name} (completed {_currentCount}/{_targetCount})";
+        return $"[{box}] {_name} (completed {_currentCount}/{_targetCount}) (Streak: {_streak})";
     }
 
     public override string GetStringRepresentation()

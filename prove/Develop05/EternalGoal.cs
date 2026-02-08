@@ -6,12 +6,13 @@ public class EternalGoal : Goal
 
     public override int RecordEvent()
     {
+        UpdateStreak();
         return _points;
     }
 
     public override string GetStatus()
     {
-        return "[ ] {_name}";
+        return "[ ] {_name} (Streak: {_streak})";
     }
 
     public override string GetStringRepresentation()
