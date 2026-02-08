@@ -100,9 +100,12 @@ class Program
 
     static void ListGoals(List<Goal> goals)
     {
+        Console.WriteLine("Goals:");
+        Console.WriteLine();
+
         for (int i = 0; i < goals.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. {goals[i].GetStatus()} {goals[i].GetName()}");
+            Console.WriteLine($"{i + 1}. {goals[i].GetStatus()}");
         }
     }
 
@@ -111,6 +114,7 @@ class Program
         ListGoals(goals);
 
         Console.Write("Which goal did you complete? ");
+        Console.WriteLine();
         int index = int.Parse(Console.ReadLine()) - 1;
 
         int earned = goals[index].RecordEvent();
@@ -135,6 +139,7 @@ class Program
         }
         
         Console.WriteLine("Goal was saved!");
+        Console.WriteLine();
         Console.WriteLine("Press Enter to continue");
         Console.ReadLine();
     }
