@@ -57,6 +57,7 @@ class Program
     static void CreateGoal(List<Goal> goals)
     {
         Console.WriteLine("Select your goal type:");
+        Console.WriteLine();
         Console.WriteLine("1). Simple Goal");
         Console.WriteLine("2). Eternal Goal");
         Console.WriteLine("3). CheckList Goal");
@@ -65,12 +66,15 @@ class Program
 
         Console.Write("Name: ");
         string name = Console.ReadLine();
+        Console.WriteLine();
 
         Console.Write("Description: ");
         string description = Console.ReadLine();
+        Console.WriteLine();
 
         Console.Write("Points: ");
         int points = int.Parse(Console.ReadLine());
+        Console.WriteLine();
 
         if (type == "1")
         {
@@ -84,9 +88,11 @@ class Program
         {
             Console.Write("Target count: ");
             int target = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
             Console.Write("Bonus: ");
             int bonus = int.Parse(Console.ReadLine());
+            Console.WriteLine();
 
             goals.Add(new  ChecklistGoal(name, description, points, target, bonus));
         }
