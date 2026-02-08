@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+
+// I added a streak function to my program so it keeps track of eachday in a row you complete an activity, kind of like duolingo
 class Program
 {
     static void Main()
