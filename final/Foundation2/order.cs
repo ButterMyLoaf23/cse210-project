@@ -43,6 +43,6 @@ public class Order
 
     public string ShippingLabel()
     {
-        return $"{_customer.Name()} {_customer.Address}";
+        return $"{_customer.Name()} {_customer.Address()}";
     }
 }
