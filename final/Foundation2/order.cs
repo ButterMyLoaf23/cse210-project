@@ -35,7 +35,7 @@ public class Order
 
         foreach (Product product in _products)
         {
-            label += product.PackingInfo();
+            label += product.PackingInfo() + "\n";
         }
 
         return label;
