@@ -30,8 +30,8 @@ class Program
 
         Order order2 = new Order(customer2);
 
-        order1.AddProduct(new Product("Monitor", "M129", 129.99, 1));
-        order1.AddProduct(new Product("HDMI Cable", "CBL01", 10.00, 2));
+        order2.AddProduct(new Product("Monitor", "M129", 129.99, 1));
+        order2.AddProduct(new Product("HDMI Cable", "CBL01", 10.00, 2));
 
         Console.WriteLine("Order 2:");
         Console.WriteLine("PackingLabe2:");
