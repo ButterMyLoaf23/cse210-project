@@ -2,8 +2,19 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello Foundation4 World!");
+        List<Activity> activities = new List<Activity>();
+
+        activities.Add(new Running("18 Feburary 2026", 30, 3.0));
+
+        activities.Add(new Cycling("19 Feburary 2026", 45, 15.0));
+
+        activities.Add(new Swimming("20 Feburary 2026", 120, 30));
+
+        foreach (Activity activity in activities)
+        {
+            Console.WriteLine(activity.GetSummary());
+        }
     }
 }
