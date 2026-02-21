@@ -19,7 +19,7 @@ public class Event
 
     public string GetStandardDetails()
     {
-        return $"{_title} \n {_description} \n {_date} at {_time} \n {_address}";
+        return $"{_title} \n {_description} \n {_date} at {_time} \n {_address.GetFullAddress()}";
     }
 
     public virtual string GetFullDetails()
