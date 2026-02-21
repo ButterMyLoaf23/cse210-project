@@ -10,10 +10,11 @@ class Program
 
         activities.Add(new Cycling("19 Feburary 2026", 45, 15.0));
 
-        activities.Add(new Swimming("20 Feburary 2026", 120, 30));
-
+        activities.Add(new Swimming("20 Feburary 2026", 90, 45));
+    
         foreach (Activity activity in activities)
         {
+            Console.WriteLine();
             Console.WriteLine(activity.GetSummary());
         }
     }
