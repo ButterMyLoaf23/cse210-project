@@ -19,15 +19,15 @@ public class Event
 
     public string GetStandardDetails()
     {
-        return $"{_title} {_description} {_date} at {_time} {_address}";
+        return $"{_title} \n {_description} \n {_date} at {_time} \n {_address}";
     }
 
-    public string GetFullDetails()
+    public virtual string GetFullDetails()
     {
         return GetStandardDetails();
     }
 
-    public string GetShortDescription()
+    public virtual string GetShortDescription()
     {
         return $"{_title} - {_date}";
     }
