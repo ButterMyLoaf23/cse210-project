@@ -23,6 +23,6 @@ public class Cycling : Activity
 
     public override string GetSummary()
     {
-        return $"{GetDate()} Cycling for ({GetMinutes} min)" + $"Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
+        return $"{GetDate()} Cycling for ({GetMinutes()} min)" + $"Distance: {GetDistance()} miles, Speed: {GetSpeed()} mph, Pace: {GetPace()} min per mile";
     }
 }
